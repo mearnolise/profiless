@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&display=swap');
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+element {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+element::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* app*/
+
+.container {
+  position: relative;
+  width: 100vw;
+  min-width: 1000px;
+  background-color: red;
+  margin-top: 130px;
+  height: calc(100vh - 130px);
+}
+
+/*Navbar*/
+.nav-fix {
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #ffff;
+}
+.header {
+  margin: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin: 0px 50px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header li {
+  margin-left: 20px;
+}
+
+.header button {
+  padding: 10px 20px;
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/*home1 */
+.home1-container {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.home1-container section {
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/*home1-container section:nth-of-type(1)*/
+.xxx {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/*home1-container section:nth-of-type(2)*/
+.yyy {
+  margin-top: 20px;
+  height: fit-content;
+}
+
+/* start page*/
+.start-page-div {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.start-page-div-pic {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 55%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.start-page-text {
+  position: absolute;
+  height: 100%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.nickname-text {
+  color: red;
+  font-family: 'Poppins', sans-serif;
+  font-size: 8vw !important;
+  width: 100%;
+  text-align: left;
+}
+
+.fullname-text {
+  color: red;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vw !important;
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .nickname-text {
+    font-size: 80px !important;
+  }
+  .fullname-text {
+    font-size: 20px !important;
+  }
+}
+
+/*page2*/
+
+.swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.5;
+}
+
+.page2-container {
+  /*background-image: url(./image/black-background1.jpg);*/
+  position: relative;
+  width: 100%;
+  height: 2600px;
+}
+
+.page2-context {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.line {
+  position: absolute;
+  height: 100%;
+  left: 160px;
+  bottom: 0;
+  width: 5px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(245, 245, 245),
+    rgb(238, 237, 237),
+    rgb(138, 135, 135),
+    black
+  );
+}
+
+.page2-card {
+  height: 600px;
+  padding-left: 250px;
+}
+
+.page2-list {
+  position: relative;
+  overflow-wrap: normal;
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.page2-title {
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  margin: 75px 0;
+  position: relative;
+  z-index: 0;
+  width: 250px;
+  height: 50px;
+}
+.page2-title:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 5px;
+  border-radius: 15px;
+  background: linear-gradient(to right, white, black);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.title-text {
+  position: absolute;
+  top: -34%;
+  left: 10%;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Gulzar', serif;
+}
+
+.page2-footer {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.page2-footer-text {
+  margin: 10px 0px 5px;
+  font-family: 'Gulzar', serif;
+}
+
+.footer-icons {
+  margin: auto 10px;
+  width: 30px;
+  height: 30px;
+}
+/* font-family: 'Just Another Hand', cursive; */
+
+/* Card */
+
+.fix-card-swiper {
+  width: 2600px;
+}
+
+.page2-list.card {
+  height: 300px;
+}
+
+.card-box {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+/* school */
+
+.page2-school {
+  height: 700px;
+  padding-left: 250px;
+}
+
+.page2-list.school {
+  height: 400px;
+}
+
+.fix-school-swiper {
+  width: 2000px;
+}
+
+.school-profile {
+  font-family: 'Just Another Hand', cursive;
+  height: 394px;
+  border: 3px solid;
+  margin: 15px 15px 15px 15px;
+  width: 600px;
+  position: relative;
+}
+
+.school-profile.pink {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(18, 138, 218), pink) 1;
+}
+
+.school-profile.green {
+  border: 3px solid;
+  border-image: linear-gradient(to right, rgb(3, 119, 53), rgb(145, 224, 162)) 1;
+}
+
+.school-profile.gray {
+  border: 3px solid gray;
+}
+
+.school-pic {
+  margin: 30px auto;
+  width: 90%;
+  height: 60%;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.school-logo {
+  position: absolute;
+  top: 9%;
+  left: 87%;
+  height: 50px;
+}
+
+.school-text {
+  color: white;
+  margin-left: 30px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.more-button {
+  position: absolute;
+  bottom: -1%;
+  color: white;
+  right: 6%;
+  cursor: pointer;
+}
+
+.more-button:hover {
+  color: red;
+}
+
+/* info */
+.page2-info {
+  height: 900px;
+  padding-left: 250px;
+}
+
+.page2-list.info {
+  height: 600px;
+}
+
+.info-div {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -50px -50px 0 -40px rgba(179, 87, 12, 0.959),
+    50px 50px 0 -40px rgb(245, 248, 35);
+}
+
+.info-pic {
+  height: 100%;
+  width: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info-text {
+  padding: 30px 30px;
+  margin: 0px auto;
+  width: 350px;
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+.info-title {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.info-small-text {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+.info-text ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.info-text li {
+  margin-top: 20px;
+}
+
+.text-color-info {
+  color: brown;
+  margin-left: 10px;
+}
+
+/* grade-page */
+
+.grade-container {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  min-width: 1000px;
+  margin-top: 140px;
+}
+
+.grade-box {
+  height: 50px;
+  border: solid 1px black;
+  position: relative;
+  border-radius: 2px;
+  text-align: center;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(87, 90, 90));
+  display: flex;
+}
+
+.grade-text {
+  margin: auto;
+  width: 100%;
+  font-size: 25px;
+  font-family: 'Mukta', sans-serif;
+  cursor: pointer;
+  color: #fff;
+  display: inline;
+}
+
+.grade-button {
+  height: 30px;
+  color: #fff;
+  width: 50px;
+  margin: auto;
+  display: inline;
+  margin-right: 10px;
+}
+
+.grade-pop-container {
+  width: 100%;
+  height: fit-content;
+}
+
+.grade-swiper {
+  background: linear-gradient(to top, rgb(0, 0, 0), rgb(87, 90, 90));
+}
+
+.grade-pic {
+  margin: 10px auto;
+  width: fit-content;
+}
+.grade-image {
+  height: 1000px;
+}
