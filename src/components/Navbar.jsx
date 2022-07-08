@@ -9,7 +9,7 @@ function Navbar() {
         <h1 onClick={() => navigate('/')}>Profile</h1>
         <ul>
           <li>
-            <button onClick={() => navigate('/others')}>Others</button>
+            <button onClick={() => navigate('/grade')}>Others</button>
           </li>
         </ul>
       </header>
