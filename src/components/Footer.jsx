@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaMailBulk, FaFacebook } from 'react-icons/fa'
+import { FaGithub, FaFacebook } from 'react-icons/fa'
 
 function Footer() {
   return (
@@ -8,18 +8,11 @@ function Footer() {
         <h2 className="page2-footer-text">For Finding JOB</h2>
         <div>
           <a
-            href="https://github.com/mearnolise/profilessss"
+            href="https://github.com/mearnolise/profiless"
             target="noreferrer noopener"
             rel="github"
           >
             <FaGithub className="footer-icons" />
-          </a>
-          <a
-            href="https://github.com/mearnolise/profilessss"
-            target="noreferrer noopener"
-            rel="github"
-          >
-            <FaMailBulk className="footer-icons" />
           </a>
 
           <a
